@@ -739,8 +739,11 @@ input::-webkit-input-placeholder {
         <div class="menu" id="menu">
             <ul class="scrollcontent">
                 <!--左侧目录，按照需要修改和添加，参考已有的修改名称和href-->
-                <li><a href="#row-1">PT</a></li>
-                <li><a href="#row-2">Switch</a></li>
+                <li><a href="#row-1">在线视频</a></li>
+                <li><a href="#row-2">下载</a></li>
+		<li><a href="#row-3">字幕</a></li>
+		<li><a href="#row-4">Switch</a></li>
+		<li><a href="#row-5">SEX</a></li>
             </ul>
         </div>
     </div>
@@ -751,7 +754,7 @@ input::-webkit-input-placeholder {
             <section class="sousuo">
             <div class="search">
                 <div class="search-box">
-                    <button class="search-engine-name" id="search-engine-name">百度搜索</button>
+                    <button class="search-engine-name" id="search-engine-name">百度一下</button>
                     <input type="text" id="txt" class="search-input" placeholder="选择引擎，输入关键字，回车/Enter搜索"/>
                     <button class="search-btn" id="search-btn">搜索</button>
                 </div>
@@ -868,9 +871,6 @@ input::-webkit-input-placeholder {
             <div class="container">
                 <div class="rwo">
                     <div class="col-md-12">
-                        <p>
-                            本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：xxx
-                        </p>
                         <!--代码源自小呆导航的开源代码，遵循MIT协议，此处保留源代码的声明-->
                         <p>
                             Copyright © 2017-2018 小呆导航（webjike.com）All Rights Reserved
@@ -928,7 +928,7 @@ function browserRedirect() {
   });
  
 // 默认搜索引擎的内容，如果界面修改了需要同步修改
-var thisSearch = 'http://www.caup.cn/search?q=';
+var thisSearch = 'https://www.baidu.com/s?wd=';
 
 $('#txt').keydown(function(ev){
     // 回车键的处理
