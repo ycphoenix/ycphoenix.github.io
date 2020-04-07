@@ -17,13 +17,9 @@ $(function () {
 
   var search_types = [
     { url: 'https://www.baidu.com/s?wd=', type: 'baidu' },
-    { url: 'https://www.sogou.com/web?query=', type: 'sogou' },
     { url: 'https://cn.bing.com/search?q=', type: 'bing' },
-    { url: 'https://www.so.com/s?q=', type: 'so' },
     { url: 'https://www.google.com/search?q=', type: 'google' },
-    { url: 'http://www.cilimao.cc/search?word=', type: 'cili' },
-    { url: 'http://neets.cc/search?key=', type: 'yingyin' },
-    { url: 'http://www.panduoduo.net/s/name/', type: 'wangpan' },
+    { url: 'https://s.taobao.com/search?q=', type: 'taobao' },
   ];
   $searchLogo.on('click', function () {
     $searchMethods.show();
