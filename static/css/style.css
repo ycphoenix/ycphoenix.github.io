@@ -34,7 +34,7 @@
 .search-left {
     display: flex;
     width: 877px;
-    height: 54px;
+    height: 40px;
     line-height: 20px;
     border: 1px solid rgba(217, 217, 217, 0.96);
 }
@@ -67,7 +67,7 @@
     display: none;
     position: absolute;
     left: 0;
-    top: 54px;
+    top: 40px;
     width: 155px;
     border: 1px solid rgba(217, 217, 217, 0.96);
     background-color: #fff;
@@ -100,7 +100,7 @@
 
 .search-submit {
     width: 123px;
-    height: 54px;
+    height: 40px;
     line-height: 26px;
     background: url("./img/search.png") #1890ff 48px center no-repeat;
     -webkit-background-size: 35px 35px;
@@ -118,7 +118,7 @@
     flex: 1;
 }
 .input-wrap .search-input {
-    height: 52px;
+    height: 38px;
     width: 100%;
     outline: 0;
     border: 0;
