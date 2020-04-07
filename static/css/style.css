@@ -63,26 +63,6 @@ textarea {
     margin-top: -100px; 
     clear:both; */
 }
-/* logo start  */
-.logo-box {
-    display: flex;
-    overflow: hidden;
-    margin-left: 250px;
-    align-items: center;
-}
-.logo-left {
-    position: relative;
-    width: 125px;
-    height: 121px;
-    cursor: pointer;
-}
-.logo-right {
-    padding-left: 36px;
-    font-size: 36px;
-    color: rgba(0, 39, 102, 1);
-    font-family: SourceHanSansSC-regular;
-}
-/* logo end  */
 
 
 /* 搜索框 start */
@@ -161,61 +141,6 @@ textarea {
     background-color: #f0f0f0;
 }
 
-.search-result {
-    display: none;
-    position: absolute;
-    width: 837px;
-    top: 55px;
-    left: 40px;
-    border: 1px solid rgba(187, 187, 187, 1);
-    background-color: #fff;
-}
-.result-item {
-    height: 34px;
-    line-height: 34px;
-    padding-left: 15px;
-}
-.result-item.active {
-    background: #F0F0F0;
-}
-.result-item:hover {
-    background-color: #eee;
-    cursor: pointer;
-}
-
-.input-wrap {
-    position: relative;
-    flex: 1;
-}
-.input-wrap .search-input {
-    height: 52px;
-    width: 100%;
-    outline: 0;
-    border: 0;
-    font-size: 16px;
-    padding-left: 15px;
-}
-/* .input-wrap .search-input:focus{
-	border-style:solid;
-	border-color: #FDA31E 96%;
-	box-shadow: 0 0 10px #FDA31E;
-    } */
-/* .search-left:focus{
-    border-style:solid;
-    border-color: #FDA31E 96%;
-    box-shadow: 0 0 10px #FDA31E;
-    } */
-.input-wrap .clear-keyword {
-    display: none;
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: #d2d2d2;
-    font-size: 30px;
-}
-
 .search-submit {
     width: 123px;
     height: 54px;
@@ -232,11 +157,6 @@ textarea {
 }
 
 /* 搜索框 end */
-/*  导航内容 start  */
-.nav-content {
-    overflow: hidden;
-}
-/*  导航内容 end  */
 
 
 /*内容区域*/
