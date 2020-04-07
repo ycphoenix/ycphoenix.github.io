@@ -33,7 +33,7 @@
 }
 .search-left {
     display: flex;
-    width: 510px;
+    width: 550px;
     height: 40px;
     line-height: 20px;
     border: 1px solid rgba(217, 217, 217, 0.96);
@@ -71,6 +71,7 @@
     width: 155px;
     border: 1px solid rgba(217, 217, 217, 0.96);
     background-color: #fff;
+    z-index:9999;
 }
 .search-methods li {
     padding-left: 39px;
