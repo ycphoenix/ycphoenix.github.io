@@ -5,5 +5,5 @@
 刷新速度=120
 
 [Server]
-0=热血传奇|热血传奇|热血传奇|home.yc0.win|7001|0|home.yc0.win|0|0
+0=热血传奇|热血传奇|热血传奇|home.yc0.win|7000|0|home.yc0.win|0|0
 
