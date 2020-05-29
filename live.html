@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/flv.js/1.5.0/flv.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/dplayer/1.25.1/DPlayer.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <style>
+        .body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .play {
+            width: 300px;
+            /* height: 300px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <textarea type="text" id='url'></textarea>
+        <button onclick="jiexi()">解析</button>
+    </div>
+
+    <div id='all' class="body"> </div>
+    <script>
+
+
+        function jiexi() {
+            let data = document.getElementById('url').value
+            if (!data) {
+                alert('请输入数据')
+                return
+            } else {
+                data = JSON.parse(data)
+                if (!data.zhubo) {
+                    alert('输入的数据有错误，请全部复制粘贴过来')
+                    return
+                }
+                const zhubo = data.zhubo.filter((url) => { return url.address.includes('.flv') })
+                let str = ''
+                for (var i = 0; i < zhubo.length; i++) {
+                    str += `<div id=${i} class='play'></div>`;
+                }
+                document.getElementById('all').innerHTML = str;
+                for (var i = 0; i < zhubo.length; i++) {
+                    new DPlayer({
+                        container: document.getElementById(i),
+                        autoplay: true,
+                        mutex: false,
+                        video: {
+                            url: zhubo[i].address,
+                            type: 'customFlv',
+
+                            customType: {
+                                customFlv: function (video, player) {
+                                    const flvPlayer = flvjs.createPlayer({
+                                        type: 'flv',
+                                        url: video.src,
+                                    });
+                                    flvPlayer.attachMediaElement(video);
+                                    flvPlayer.load();
+                                },
+                            },
+                        },
+                    });
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
